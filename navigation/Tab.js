@@ -15,10 +15,7 @@ const MyTab = () => {
     return (
         <NavigationContainer>
         <Tab.Navigator
-          sceenOptions={{
-            headerShown: false
-          }}
-          tabBarOptions={{
+          screenOptions={{
             activeTintColor: 'red',
             inactiveTintColor: 'black',
           }}
