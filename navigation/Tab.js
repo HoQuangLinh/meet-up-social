@@ -15,6 +15,9 @@ const MyTab = () => {
     return (
         <NavigationContainer>
         <Tab.Navigator
+          sceenOptions={{
+            headerShown: false
+          }}
           tabBarOptions={{
             activeTintColor: 'red',
             inactiveTintColor: 'black',
@@ -24,6 +27,14 @@ const MyTab = () => {
             name='Home' 
             component={Home}
             options={{
+              headerStyle: {
+                backgroundColor: '#f4511e',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+              headerTitle: 'Meet Up' ,
               tabBarIcon: ({color}) => <FontAwesome1 name='home' size={25} color={color} />,
             }}
           />
@@ -31,6 +42,7 @@ const MyTab = () => {
             name='Explore' 
             component={View}
             options={{
+              
               tabBarIcon: ({color}) => <FontAwesome name='magnifying-glass' size={25} color={color} />,
             }}
           />
