@@ -7,7 +7,7 @@ import FontAwesome from 'react-native-vector-icons/Entypo';
 import FontAwesome1 from 'react-native-vector-icons/FontAwesome5';
 
 import Home from '../screens/home';
-
+import Explore from '../screens/explore/explore';
 const Tab = createBottomTabNavigator();
 
 
@@ -37,7 +37,7 @@ const MyTab = () => {
           />
           <Tab.Screen 
             name='Explore' 
-            component={View}
+            component={Explore}
             options={{
               
               tabBarIcon: ({color}) => <FontAwesome name='magnifying-glass' size={25} color={color} />,
