@@ -4,18 +4,20 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native'
 const GroupCard = () => {
     return(
         <View style={styles.cardContainer}>
-            <Text></Text>
+            
         </View>
+
     );
 };
 
 const styles=StyleSheet.create({
     cardContainer:{
         width: 120,
-        height: 160,
-        backgroundColor:"green",
+        height: 165,
+        backgroundColor:"#50C7C7",
         borderRadius: 15,
-        marginLeft:10
+        marginLeft:15,
+        
         
     }
 })
