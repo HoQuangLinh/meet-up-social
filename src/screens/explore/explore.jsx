@@ -1,11 +1,15 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, ScrollView, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {COLORS} from '../../constans/theme';
 import styles from './styles';
-
+import ExploreMeetup from '../../components/exploreMeetup/exploreMeetup';
+import DATA from '../../../assets/json/exploreData.json';
 const Explore = () => {
+
+    const filterData = (type) => (DATA.popular).filter((result) => result.type == type)
+
     return (
       <View >
         <View style={styles.top}>
@@ -47,6 +51,12 @@ const Explore = () => {
                 <Text style={styles.title3}>Find a group you like</Text>
                 <Text color={COLORS.grey}>Match your interests</Text>
               </View>
+            </View>
+            <View>
+              <Text style={styles.title4}>Explore Meetup</Text>
+              <ExploreMeetup title='Popular now' data ={ filterData("1")}/>
+              <ExploreMeetup title='Career and Business' data ={ filterData("1")}/>
+              <ExploreMeetup title='Language and Culture' data ={ filterData("2")}/>
             </View>
         </ScrollView>
       </View>

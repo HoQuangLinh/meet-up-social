@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: SIZES.h2,
-        color: 'black',
+        color: COLORS.title,
         fontWeight: "bold",
     },
     title2: {
@@ -46,6 +46,12 @@ const styles = StyleSheet.create({
         fontSize: SIZES.h5,
         color: COLORS.title,
         
+    },
+    title4: {
+        fontSize: SIZES.h2,
+        color: COLORS.title,
+        marginLeft: 10,
+        marginTop: 20,
     },
     findEvents_components: {
         flexDirection: "row",
