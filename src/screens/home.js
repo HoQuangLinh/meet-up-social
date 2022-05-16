@@ -1,14 +1,15 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, Image, Button, TouchableHighlight, TouchableOpacity,} from 'react-native';
-import Cart from './../components/groupCard'
+import Cart from '../components/groupCard'
 import Icon from 'react-native-vector-icons/Entypo';
+import TabViewHome from '../navigation/TabViewHome'
 const Home = () => {
     return (
-      <View>
+      <ScrollView>
         <View style={styles.containerGroup}>
           <View style={styles.headerTitle}>
-            <Text style={styles.sectionTitle}>Groups của bạn</Text>
+            <Text style={styles.sectionTitle}>Your groups</Text>
             <Text style={styles.buttonText}>See all</Text>
           </View>
           <View>
@@ -20,7 +21,7 @@ const Home = () => {
               <Cart />
             </ScrollView>
             <TouchableOpacity style={styles.buttonAddGroup} >
-              <Image style={styles.imageAddGroup} source={require('./../assets/trophy.png')} />
+              <Image style={styles.imageAddGroup} source={require('../../assets/trophy.png')} />
               <View flex='1' >
                 <Text style={styles.titleAddGroup}>Start a new group</Text>
                 <Text>Organize your own events</Text>
@@ -30,11 +31,16 @@ const Home = () => {
           </View>
         </View>
         <View style={styles.containerCalendar}>
-          <View StyleSheet={styles.banner}>
-            <Text>abc</Text>
+          <View style={styles.banner}>
+            <Image style={styles.ImageBanner} source={require('../../assets/banner.jpg')} />
           </View>
+          <View>
+            <Text style={styles.sectionTitle2}>Your calendar</Text>
+            
+          </View>
+          <TabViewHome />
         </View>
-      </View>
+      </ScrollView>
 
     );
 };
@@ -83,7 +89,24 @@ const styles = StyleSheet.create({
   },
   containerCalendar:{
     backgroundColor: 'white',
-    marginTop: 10
+    marginTop: 10,
+    height: 500
+  },
+  banner:{
+      borderBottomColor: '#ccc',
+      borderBottomWidth: 1,
+      padding: 10,
+      height: 150
+
+  },
+  ImageBanner:{
+    width: '100%',
+    height:'100%',
+  },
+  sectionTitle2:{
+    fontSize: 20,
+    fontWeight: 'bold',
+    padding: 20
   }
 })
 export default Home
