@@ -1,13 +1,13 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import MyTab from './navigation/Tab';
+import MyTab from './src/navigation/Tab';
 
 
 
 const App = () => {
   return (
-    <MyTab></MyTab>
+    <MyTab/>
   );
 }
 
