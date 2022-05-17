@@ -5,13 +5,13 @@ import Cart from '../components/groupCard'
 import Icon from 'react-native-vector-icons/Entypo';
 import TabViewHome from '../navigation/TabViewHome'
 let ScreenHeight = Dimensions.get("window").height;
-const Home = () => {
+const Home = ({navigation}) => {
     return (
       <ScrollView>
         <View style={styles.containerGroup}>
           <View style={styles.headerTitle}>
             <Text style={styles.sectionTitle}>Your groups</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('AllGroupCard')}}>
               <Text style={styles.buttonText}>See all</Text>
             </TouchableOpacity>
           </View>

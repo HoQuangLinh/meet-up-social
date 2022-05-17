@@ -8,17 +8,26 @@ import FontAwesome1 from 'react-native-vector-icons/FontAwesome5';
 
 import Home from '../screens/home';
 import Explore from '../screens/explore/explore';
+
+import HomeStack from './HomeNavigator';
 const Tab = createBottomTabNavigator();
 
 
 const MyTab = () => {
     return (
         <NavigationContainer>
-        <Tab.Navigator>
+        <Tab.Navigator
+          // screenOptions={{
+          //   keyboardHidesTabBar: true,
+           
+          //   headerShadowVisible: false,
+          //   activeTintColor: "#ff6c00",
+          // }}
+        >
           <Tab.Screen 
-            name='Home' 
-            component={Home}
-            options={{
+            name='Home1' 
+            component={HomeStack}
+            options={{ headerShown: false,
               headerStyle: {
                 backgroundColor: '#f4511e',
               },
