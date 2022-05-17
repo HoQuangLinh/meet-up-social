@@ -1,16 +1,19 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, Image, Button, TouchableHighlight, TouchableOpacity,} from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image, Button, TouchableHighlight, TouchableOpacity,Dimensions} from 'react-native';
 import Cart from '../components/groupCard'
 import Icon from 'react-native-vector-icons/Entypo';
 import TabViewHome from '../navigation/TabViewHome'
+let ScreenHeight = Dimensions.get("window").height;
 const Home = () => {
     return (
       <ScrollView>
         <View style={styles.containerGroup}>
           <View style={styles.headerTitle}>
             <Text style={styles.sectionTitle}>Your groups</Text>
-            <Text style={styles.buttonText}>See all</Text>
+            <TouchableOpacity>
+              <Text style={styles.buttonText}>See all</Text>
+            </TouchableOpacity>
           </View>
           <View>
             <ScrollView horizontal={true} style={styles.containerCart}>
@@ -36,10 +39,11 @@ const Home = () => {
           </View>
           <View>
             <Text style={styles.sectionTitle2}>Your calendar</Text>
-            
           </View>
           <TabViewHome />
         </View>
+
+        
       </ScrollView>
 
     );
@@ -48,7 +52,7 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   containerGroup:{
-    backgroundColor:'white'
+    backgroundColor:'white',
   },
   headerTitle:{
     flexDirection: 'row',
@@ -90,7 +94,7 @@ const styles = StyleSheet.create({
   containerCalendar:{
     backgroundColor: 'white',
     marginTop: 10,
-    height: 500
+    height: ScreenHeight
   },
   banner:{
       borderBottomColor: '#ccc',

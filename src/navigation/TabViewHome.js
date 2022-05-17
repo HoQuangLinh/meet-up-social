@@ -1,11 +1,16 @@
 import * as React from 'react';
 import { View, StyleSheet, Dimensions, StatusBar, Text } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
-
 import { TabBar } from 'react-native-tab-view';
 
+import EventCard from '../components/eventCard';
 const FirstRoute = () => (
-  <View style={[styles.scene, { backgroundColor: 'white' }]} />
+  <View style={[styles.scene, {alignItems: 'center'}]}>
+    <EventCard />
+    <EventCard />
+
+  </View>
+  
 );
 
 const SecondRoute = () => (
@@ -40,7 +45,7 @@ export default function TabViewHome() {
     <TabView
     navigationState={{ index, routes }}
     renderTabBar={props => (
-      <TabBar
+      <TabBar 
         {...props}
         renderLabel={({ route, color }) => (
           <Text style={{ color: 'black', margin: 8 }}>
@@ -69,7 +74,7 @@ const styles = StyleSheet.create({
   },
   scene: {
     flex:1,
-    
+  
 
   },
 });

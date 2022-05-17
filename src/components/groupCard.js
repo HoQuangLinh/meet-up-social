@@ -1,11 +1,11 @@
 import React from 'react'
-import { StyleSheet, Text, View, StatusBar } from 'react-native'
+import { StyleSheet, Text, View, StatusBar,TouchableHighlight, TouchableOpacity  } from 'react-native'
 
 const GroupCard = () => {
     return(
-        <View style={styles.cardContainer}>
+        <TouchableOpacity style={styles.cardContainer}>
             
-        </View>
+        </TouchableOpacity>
 
     );
 };
