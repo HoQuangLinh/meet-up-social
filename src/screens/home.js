@@ -25,7 +25,7 @@ const Home = () => {
             </ScrollView>
             <TouchableOpacity style={styles.buttonAddGroup} >
               <Image style={styles.imageAddGroup} source={require('../../assets/trophy.png')} />
-              <View flex='1' >
+              <View >
                 <Text style={styles.titleAddGroup}>Start a new group</Text>
                 <Text>Organize your own events</Text>
               </View>
