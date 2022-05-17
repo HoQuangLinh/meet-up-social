@@ -1,0 +1,58 @@
+{
+    "popular": [
+        {
+            "id": "001",
+            "name":"Want to be happier",
+            "image_url": "https://s3-ap-southeast-1.amazonaws.com/images.humanresourcesonline.net/wp-content/uploads/2016/12/Jerene-Dec-2016-party-123RF-700x420.jpg",
+            "is_closed": false,
+            "rating": 4.5,
+            "type": "1",
+            "time":"WED, MAY 18 - 5:00 AM"
+        },
+        {
+            "id": "002",
+            "name":"Become beautiful",
+            "image_url": "https://i.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4",
+            "is_closed": false,
+            "rating": 3,
+            "type": "1",
+            "time":"THU, MAY 19 - 9:00 AM"
+        },
+        {
+            "id": "003",
+            "name":"Dancing with friends",
+            "image_url": "https://i.picsum.photos/id/158/4836/3224.jpg?hmac=Gu_3j3HxZgR74iw1sV0wcwlnSZSeCi7zDWLcjblOp_c",
+            "is_closed": false,
+            "rating": 5,
+            "type": "1",
+            "time":"FRI, MAY 20 - 10:00 PM"
+        },
+        {
+            "id": "004",
+            "name":"Go coffee and chill",
+            "image_url": "https://i.picsum.photos/id/163/2000/1333.jpg?hmac=htdHeSJwlYOxS8b0TTpz2s8tD_QDlmsd3JHYa_HGrg8",
+            "is_closed": false,
+            "rating": 4,
+            "type": "2",
+            "time":"MON, MAY 16 - 8:00 AM"
+        },
+        {
+            "id": "005",
+            "name":"Swim and chill",
+            "image_url": "https://i.picsum.photos/id/164/1200/800.jpg?hmac=wkqGUkaeW3kiAsHq_VwxSWWossIMAwFV4eUfFzuDkew",
+            "is_closed": false,
+            "rating": 4,
+            "type": "2",
+            "time":"TUE, MAY 17 - 10:00 AM"
+        },
+        {
+            "id": "006",
+            "name":"Work and chill",
+            "image_url": "https://i.picsum.photos/id/180/2400/1600.jpg?hmac=Ig-CXcpNdmh51k3kXpNqNqcDYTwXCIaonYiBOnLXBb8",
+            "is_closed": false,
+            "rating": 4,
+            "type": "2",
+            "time":"SUN, MAY 22 - 10:00 AM"
+        }
+    ]
+}

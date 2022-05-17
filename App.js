@@ -7,7 +7,7 @@ import MyTab from './src/navigation/Tab';
 
 const App = () => {
   return (
-    <MyTab></MyTab>
+    <MyTab/>
   );
 }
 
