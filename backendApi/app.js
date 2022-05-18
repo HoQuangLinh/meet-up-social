@@ -3,11 +3,6 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 
-const swaggerUi = require("swagger-ui-express");
-swaggerDocument = require("./swagger.json");
-
-//Add swagger
-app.use("/api-doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 //Log web
 app.use(morgan("tiny"));
 
