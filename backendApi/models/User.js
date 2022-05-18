@@ -40,6 +40,7 @@ let user_Schema = new Schema({
     type: Date,
     default: Date.now,
   },
+  groups: [{ type: mongoose.Schema.Types.ObjectId, ref: "Group" }],
 });
 
 user_Schema.plugin(uniqueValidator);

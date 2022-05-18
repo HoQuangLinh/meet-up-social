@@ -20,8 +20,10 @@ app.use(cors());
 app.get("/", (req, res) => res.send("Hello from homepage"));
 
 //Routes app
-var usersRouter = require("./routes/usersRouter");
+const usersRouter = require("./routes/usersRouter");
+const groupsRouter = require("./routes/groupsRouter");
 app.use("/api/users", usersRouter);
+app.use("/api/groups", groupsRouter);
 
 //Connect to database
 mongoose

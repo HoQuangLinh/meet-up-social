@@ -9,6 +9,10 @@ let group_Schema = new Schema({
     required: true,
     unique: true,
   },
+  topic: {
+    type: String,
+    required: true,
+  },
   event: [
     {
       avatar: {
